@@ -4,12 +4,7 @@
 	<title>Route Routing</title>
 </head>
 <body ng-app="routeApp">
-    <h1>US's Best Highways</h1>
-    <ul>
-        <li><a ng-href="#!">Pick A Highway</a></li>
-        <li><a ng-href="#!/hainesHigh">Haines Highway</a></li>
-        <li><a ng-href="#!/hanaHigh">Hana Highway</a></li>
-    </ul>
+    <div ng-include='"partials/nav.html"'></div>
     <div ng-view></div>
 
 	<!-- third party js -->
