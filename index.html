@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Route Routing</title>
+</head>
+<body ng-app="routeApp">
+    <h1>US's Best Highways</h1>
+    <ul>
+        <li><a ng-href="#!">Pick A Highway</a></li>
+        <li><a ng-href="#!/hainesHigh">Haines Highway</a></li>
+        <li><a ng-href="#!/hanaHigh">Hana Highway</a></li>
+    </ul>
+    <div ng-view></div>
+
+	<!-- third party js -->
+	<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
+
+	<!-- app specific js -->
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controllers/hainesCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/hanaCtrl.js"></script>
+	<script type="text/javascript" src="app/factories/routeGetter.js"></script>
+
+</body>
+</html>
